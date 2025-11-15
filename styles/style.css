@@ -5,17 +5,19 @@
   display: flex;
   width: 1100px;
   height: 293px;
-  justify-content: space-around;
   align-items: center;
 }
 .navigation{
   display: flex;
   gap: 32px;
+  margin-left: 50px;
 }
 .none-underline-menu{
   text-decoration: none;
 }
 .logo-black{
+  margin-left: 36.52px;
+  margin-right: 193.86px;
   width: 148px;
   height: 105px;
 }
@@ -25,9 +27,8 @@
   list-style: none;
   font-style: normal;
   text-underline-offset: 4px;
-}
-.main{
-
+  margin-right: 50px;
+  font-size: 18px; 
 }
 .cover{
   display: flex;
@@ -88,7 +89,7 @@
   justify-content: flex-end;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   word-spacing: 15px;
 }
@@ -179,10 +180,14 @@ line-height: 120%;
  margin-top: auto;
 }
 .underlots{
+  height: 23px;
+  width: 192px;
   font-size: 20px;
   margin-left: 40px;
   margin-top: 30px;
-  
+  text-decoration: none; 
+  border-bottom: 1px solid currentColor; 
+  padding-bottom: 2px; 
 }
 .about{
  display: flex;
