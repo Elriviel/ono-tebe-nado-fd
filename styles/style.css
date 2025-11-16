@@ -11,40 +11,57 @@
 	display: flex;
 	width: 1100px;
 	min-height: 293px;
-	align-items: center;
 }
 .navigation {
+	width: 392px;
 	display: flex;
 	margin-left: 50px;
+	margin-top: 133px;
+	margin-bottom: 138px;
+	font-size: 18px;
 }
-.navigation-items{
+.navigation-items {
 	display: flex;
-	gap: 32px;
+	gap: 26px;
 	list-style-type: circle;
+	list-style-position: outside;
 }
-.navigation-items .no-dot{
-	list-style-type: none;	
+.navigation-items .no-dot {
+	list-style-type: none;
+}
+.navigation-items .dot {
+	padding-left: 6px;
 }
 .none-underline-menu {
 	text-decoration: none;
 }
-.navigation-item{
+.navigation-item {
 	text-decoration: none;
 	border-bottom: 1px solid black;
 }
-.logo-black {
+.logo-black-card {
 	margin-left: 36.52px;
-	margin-right: 193.86px;
+	margin-top: 92px;
+	margin-bottom: 96px;
 	width: 148px;
 	height: 105px;
+	padding:1.63px 10px 0.83px 9px;
 }
-.address {
-	width: 240px;
+.logo-black{
+	width: 129px;
+	height: 105px;
+}
+.address-card {
+	max-width: 240px;
+	margin-left: 184px;
+	margin-top: 95px;
+	margin-bottom: 100px;
+}
+.address{
 	font-style: normal;
-	margin-right: 50px;
 	font-size: 18px;
 }
-.address-item-underline{
+.address-item-underline {
 	text-decoration: none;
 	border-bottom: 1px solid black;
 	line-height: 24px;
@@ -90,7 +107,7 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
-	margin-left: -83px;
+	margin-left: -85px;
 }
 .description {
 	width: 1000px;
@@ -129,6 +146,8 @@
 	min-height: 723px;
 	display: flex;
 	flex-direction: column;
+	margin-left: 24px;
+	margin-right: 24px;
 }
 .lots-title {
 	width: 121px;
@@ -211,6 +230,8 @@
 	min-height: 595px;
 	margin-bottom: 180px;
 	margin-top: 120px;
+	margin-left: 24px;
+	margin-right: 24px;
 	justify-content: space-between;
 }
 .logo-white {
@@ -245,6 +266,7 @@
 	margin-top: 100px;
 	line-height: 24px;
 	font-size: 20px;
+	max-width: 690px;
 }
 .about-text-p {
 	margin-bottom: 24px;
@@ -253,33 +275,37 @@
 	display: flex;
 	width: 1100px;
 	min-height: 180px;
-	justify-content: space-around;
 }
-.address {
-	width: 265px;
-	height: 98px;
+.footer-address-block{
+	width: 264.57px;
+	margin-left: 50px;
+}
+.footer-address {
 	font-size: 18px;
 	list-style: none;
 	border: 1px;
 	text-underline-offset: 4px;
 	font-style: normal;
 }
+.footer-navigation-block{
+	margin-left: 154px;
+}
 .footer-navigation {
+	width: 164px; 
 	list-style: none;
 	text-align: center;
 	font-size: 18px;
 	text-underline-offset: 4px;
 }
 .footer-logo-list {
+	margin-left: 177px;
 	display: flex;
 	list-style: none;
-	width: 240px;
-	height: 48px;
 	gap: 48px;
 	flex-direction: row-reverse;
 }
 .footer-logo {
- 	 width: 48px;
+ 	width: 48px;
 	height: 48px;
 }
 
