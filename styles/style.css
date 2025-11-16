@@ -1,8 +1,8 @@
 .raleway-regular {
-	  font-family: "Raleway-Regular", sans-serif;
+	  font-family: "Raleway", sans-serif;
 }
 .raleway-bold {
-	  font-family: "Raleway-Bold", sans-serif;
+	  font-family: "Raleway", sans-serif;
 }
 .body {
 	display: flex;
@@ -10,13 +10,20 @@
 .header {
 	display: flex;
 	width: 1100px;
-	height: 293px;
+	min-height: 293px;
 	align-items: center;
 }
 .navigation {
 	display: flex;
-	gap: 32px;
 	margin-left: 50px;
+}
+.navigation-items{
+	display: flex;
+	gap: 32px;
+	list-style-type: circle;
+}
+.navigation-items .no-dot{
+	list-style-type: none;	
 }
 .none-underline-menu {
 	text-decoration: none;
@@ -33,13 +40,11 @@
 }
 .address {
 	width: 240px;
-	height: 98px;
-	list-style: none;
 	font-style: normal;
 	margin-right: 50px;
 	font-size: 18px;
 }
-.address-item-underlibe{
+.address-item-underline{
 	text-decoration: none;
 	border-bottom: 1px solid black;
 	line-height: 24px;
@@ -52,7 +57,7 @@
 	background-size: cover;
 	background-position: center;
 	width: 1100px;
-	height: 757px;
+	min-height: 757px;
 	margin-bottom: 180px;
 	flex-direction: column;
 	align-items: center;
@@ -61,7 +66,8 @@
 	height: 385px;
 	width: 1000px;
 	color: white;
-	font-family: "Raleway-Bold", sans-serif;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 	justify-content: space-between;
 	display: flex;
@@ -69,18 +75,18 @@
 	font-size: 100px;
 	letter-spacing: 30px;
 }
-.first-word {
+.it-word {
 	display: flex;
 	justify-content: flex-start;
 	width: 286px;
 	height: 115px;
 	margin-right: 44.5px;
 }
-.second-word {
+.you-word {
 	display: flex;
 	align-items: center;
 }
-.third-word {
+.need-word {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
@@ -95,7 +101,8 @@
 	justify-content: space-between;
 }
 .text {
-	font-family: "Raleway-Regular", sans-serif;
+	font-family: "Raleway", sans-serif;
+	font-weight: normal;
 	color: white;
 	justify-content: flex-end;
 	font-size: 22px;
@@ -105,21 +112,21 @@
 	word-spacing: 15px;
 }
 .button {
+	min-height: 51;
 	width: 256px;
-	height: 51px;
-	font-size: 22px;
+	font-size: 21px;
 	line-height: 100%;
-	border: 2px solid white;
+	border: 1px solid white;
 	background-color: transparent;
-	font-family: "Raleway-Regular", sans-serif;
+	font-family: "Raleway", sans-serif;
+	font-weight: medium;
 	color: white;
-	text-align: center;
 	text-transform: uppercase;
+	padding: 12px 31px 11px 32px;
 }
 .lots {
-	display: inline-block;
-	width: 1052px;
-	height: 723px;
+	max-width: 1052px;
+	min-height: 723px;
 	display: flex;
 	flex-direction: column;
 }
@@ -133,40 +140,29 @@
 }
 .lots-list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 25px;
 	list-style: none;
 }
 .lots-item {
-	width: 334px;
-	height: 596px;
+	flex: 0 0 334px;
+	min-height: 596px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .lots-item-film {
-	width: 334px;
-	height: 596px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
 	url("../images/card-lot-01.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 }
 .lots-item-book {
-	width: 334px;
-	height: 596px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
 	url("../images/card-lot-02.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 }
 .lots-item-picture {
-	width: 334px;
-	height: 596px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
 	url("../images/card-lot-03.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 }
 .lots-link {
 	display: block;
@@ -212,7 +208,7 @@
 .about {
 	display: flex;
 	width: 1052px;
-	height: 595px;
+	min-height: 595px;
 	margin-bottom: 180px;
 	margin-top: 120px;
 	justify-content: space-between;
@@ -250,13 +246,13 @@
 	line-height: 24px;
 	font-size: 20px;
 }
-.about-text-p-1 {
+.about-text-p {
 	margin-bottom: 24px;
 }
 .footer {
 	display: flex;
 	width: 1100px;
-	height: 180px;
+	min-height: 180px;
 	justify-content: space-around;
 }
 .address {
