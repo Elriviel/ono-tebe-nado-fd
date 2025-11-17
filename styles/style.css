@@ -142,7 +142,7 @@
 }
 
 .button {
-  min-height: 51;
+  min-height: 51px;
   width: 256px;
   font-size: 21px;
   line-height: 100%;
@@ -187,17 +187,17 @@
 
 .lots-item-film {
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('../images/card-lot-01.jpg');
+  url('../images/card-lot-01.jpg');
 }
 
 .lots-item-book {
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('../images/card-lot-02.jpg');
+  url('../images/card-lot-02.jpg');
 }
 
 .lots-item-picture {
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('../images/card-lot-03.jpg');
+  url('../images/card-lot-03.jpg');
 }
 
 .lots-link {
@@ -308,6 +308,7 @@
 .footer {
   display: flex;
   width: 1100px;
+  padding-bottom: 82px;
 }
 
 .footer-address-block {
